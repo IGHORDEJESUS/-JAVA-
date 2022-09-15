@@ -1,0 +1,54 @@
+quando se cria uma aplicação em java
+São feitas camadas
+user interface ->> web, desktop, mobile
+
+usuario <- -> banco de dados
+
+interface -> contrato que quem implementa ela precisa seguir
+métodos -> somente a assinatura do método
+
++- 5mb
++- 1.3mb~2.5mb
+
+Double x double
+    => Double é a classe (wrapper) é a rescrita do double com recursos
+    => double é o tipo do atributo, somente define o tipo e mais nada
+double nota;
+
+Double.valueOf("10.5");
+
+nota como tipo double
+Double nota02;
+nota02 como tipo double e também tenho recursos de manipulação dessa variavel
+
+retorno     nome do metodo    parametros/argumentos de entrada
+Double        media           (double nota01, double nota02) // assinatura
+{// inicio corpo do método
+    return (nota01 + nota02) / 2;
+// fim do corpo do método}
+
+camadas:
+            parede 1       parede 2     parede 3    parede 4
+user -> user interface -> controller -> service -> repository -> o banco de dados
+
+/* não se usa!
+jsp/servlet -> legado(sistemas sem atualização)
+scriptlets -> manipular banco
+*/
+
+usuario -> interface gráfica(página web, interface de app), ou seja, a interface do usuário
+controller -> é o gerenciador de requisições da interface de usuário
+1  | | | | | | | | | | | | | | | |  1
+
+o nome do aluno
+matricula do aluno
+a turma do aluno
+a média do aluno
+
+Luis, 12345, 2021.3, 10.0, 8.0
+
+aluno.setNome("Luis");
+aluno.setMatricula(12345);
+aluno.setTurma("2021.3");
+var media = (10.0 + 8.0) / 2;
+aluno.setMedia(media)
